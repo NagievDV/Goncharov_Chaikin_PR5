@@ -28,25 +28,35 @@ namespace _3ISIP_321_Goncharov_Chaikin_PR5
 
         private void btnEnter_Click(object sender, RoutedEventArgs e)
         {
+            Auth(tbLogin.Text, pbPassword.Password);
+        }
 
-            if (string.IsNullOrEmpty(tbLogin.Text) || string.IsNullOrEmpty(pbPassword.Password))
+        public bool Auth(string login, string password)
+        {
+            if (string.IsNullOrEmpty(login) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Введите логин и пароль!");
-                return;
+                return false;
             }
             using (var db = new Entities())
             {
                 var user = db.User
                 .AsNoTracking()
-                .FirstOrDefault(u => u.Login == tbLogin.Text && u.Password == pbPassword.Password);
-                if (user != null) MessageBox.Show($"Здравствуйте, {user.Role} {user.FIO.Replace('*', ' ')}!");
+                .FirstOrDefault(u => u.Login == login && u.Password == password);
 
-                else
+                if (user == null)
                 {
                     MessageBox.Show("Пользователь с такими данными не найден!");
-                    return;
+                    return false;
+                    
                 }
+                MessageBox.Show($"Здравствуйте, {user.Role} {user.FIO.Replace('*', ' ')}!");
+                tbLogin.Clear();
+                pbPassword.Clear();
+                return true;
             }
+
+
         }
     }
 }

@@ -15,9 +15,7 @@ using System.Windows.Shapes;
 
 namespace _3ISIP_321_Goncharov_Chaikin_PR5
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
         public MainWindow()

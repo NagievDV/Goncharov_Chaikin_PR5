@@ -22,8 +22,8 @@
 
         <Label Grid.Column="0" Grid.Row="0" Content="Логин:" VerticalContentAlignment="Center" Width="50" ></Label>
         <Label Grid.Column="0" Grid.Row="1" Content="Пароль:" VerticalContentAlignment="Center" Width="55" ></Label>
-        <TextBox Grid.Column="1" Grid.Row="0" BorderBrush="Blue" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" x:Name="tbLogin"/>
-        <PasswordBox Grid.Column="1" Grid.Row="1" BorderBrush="Blue" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" PasswordChar="*" x:Name="pbPassword" />
-        <Button Grid.Column="1" Grid.Row="2" x:Name="btnEnter" Height="20" Width="75" Content="Войти" Background="ForestGreen" FontFamily="Calibri" FontWeight="Bold" Click="btnEnter_Click"/>
+        <TextBox Grid.Column="1" Grid.Row="0" BorderBrush="LightGray" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" x:Name="tbLogin"/>
+        <PasswordBox Grid.Column="1" Grid.Row="1" BorderBrush="LightGray" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" PasswordChar="*" x:Name="pbPassword" />
+        <Button Grid.Column="1" Grid.Row="2" x:Name="btnEnter" Height="20" Width="75" Content="Войти" BorderBrush="DarkGreen" Background="ForestGreen" FontFamily="Calibri" FontWeight="Bold" Click="btnEnter_Click"/>
     </Grid>
 </Page>
