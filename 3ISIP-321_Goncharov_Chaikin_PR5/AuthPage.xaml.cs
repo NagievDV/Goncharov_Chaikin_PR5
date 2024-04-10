@@ -20,6 +20,7 @@ namespace _3ISIP_321_Goncharov_Chaikin_PR5
     /// </summary>
     public partial class AuthPage : Page
     {
+        public int currentAttemptsCount { get; set; }
         public AuthPage()
         {
             InitializeComponent();
@@ -28,7 +29,20 @@ namespace _3ISIP_321_Goncharov_Chaikin_PR5
 
         private void btnEnter_Click(object sender, RoutedEventArgs e)
         {
-            Auth(tbLogin.Text, pbPassword.Password);
+
+            if (Auth(tbLogin.Text, pbPassword.Password) == false)
+            {
+                currentAttemptsCount++;
+            }
+            else
+            {
+                currentAttemptsCount = 0;
+            }
+
+            if (currentAttemptsCount == 3)
+            {
+                NavigationService.Navigate(new CaptchaPage());
+            }
         }
 
         public bool Auth(string login, string password)

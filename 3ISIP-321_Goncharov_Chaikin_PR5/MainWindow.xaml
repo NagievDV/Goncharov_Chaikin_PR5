@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:_3ISIP_321_Goncharov_Chaikin_PR5"
         mc:Ignorable="d"
         Title="MainWindow" Height="300" Width="300">
-    <Frame Source="AuthPage.xaml">
+    <Frame x:Name="frMain" Source="AuthPage.xaml" NavigationUIVisibility="Hidden">
         
     </Frame>
 </Window>

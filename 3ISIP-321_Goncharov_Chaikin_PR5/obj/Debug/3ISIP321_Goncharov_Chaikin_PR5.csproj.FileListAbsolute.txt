@@ -17,3 +17,5 @@ C:\Users\217042\Desktop\Goncharov_Chaikin_PR5\3ISIP-321_Goncharov_Chaikin_PR5\ob
 C:\Users\217042\Desktop\Goncharov_Chaikin_PR5\3ISIP-321_Goncharov_Chaikin_PR5\obj\Debug\3ISIP321_Goncharov_Chaikin_PR5.csproj.CopyComplete
 C:\Users\217042\Desktop\Goncharov_Chaikin_PR5\3ISIP-321_Goncharov_Chaikin_PR5\obj\Debug\3ISIP-321_Goncharov_Chaikin_PR5.exe
 C:\Users\217042\Desktop\Goncharov_Chaikin_PR5\3ISIP-321_Goncharov_Chaikin_PR5\obj\Debug\3ISIP-321_Goncharov_Chaikin_PR5.pdb
+C:\Users\217042\Desktop\Goncharov_Chaikin_PR5\3ISIP-321_Goncharov_Chaikin_PR5\obj\Debug\CaptchaPage.g.cs
+C:\Users\217042\Desktop\Goncharov_Chaikin_PR5\3ISIP-321_Goncharov_Chaikin_PR5\obj\Debug\CaptchaPage.baml
