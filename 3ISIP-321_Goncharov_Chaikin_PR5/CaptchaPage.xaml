@@ -15,8 +15,9 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        <Label x:Name="lbCaptchaCodeLabel" Grid.Row="1" Height="40" Width="150" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#FFDEDEDE" HorizontalContentAlignment="Center" BorderBrush="#FF374B53" BorderThickness="3" FontSize="15"/>
 
-        <Label x:Name="lbCaptchaCodeLabel" Grid.Row="1" Height="30" Width="100" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#FFDEDEDE" Foreground="#FF000B78" HorizontalContentAlignment="Center" BorderBrush="#FF374B53" BorderThickness="3"/>
-        <TextBox x:Name="tbCaptchaInput" Grid.Row="1" Height="25" Width="100" VerticalAlignment="Bottom" Margin="15" Background="#FFDEDEDE" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" SourceUpdated="tbCaptchaInput_SourceUpdated"/>
+        <TextBox x:Name="tbCaptchaInput" Grid.Row="1" Height="35" Width="130" VerticalAlignment="Bottom"  Background="#FFDEDEDE" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="3" FontSize="15" KeyDown="tbCaptchaInput_KeyDown"/>
+
     </Grid>
 </Page>

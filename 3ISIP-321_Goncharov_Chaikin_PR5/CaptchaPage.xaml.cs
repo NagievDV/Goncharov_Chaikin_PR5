@@ -25,9 +25,12 @@ namespace _3ISIP_321_Goncharov_Chaikin_PR5
         {
             InitializeComponent();
             GetCode();
-            lbCaptchaCodeLabel.Content = captchaCode;   
         }
 
+        private void SetCodeToLabel(string code)
+        {
+            lbCaptchaCodeLabel.Content = code;
+        }
         public void GetCode()
         {
             String allowchar = " ";
@@ -41,7 +44,7 @@ namespace _3ISIP_321_Goncharov_Chaikin_PR5
             char[] a = { ',' };
 
             String[] ar = allowchar.Split(a);
-            String pwd = " ";
+            String pwd = "";
             string temp = " ";
 
             Random r = new Random();
@@ -53,13 +56,21 @@ namespace _3ISIP_321_Goncharov_Chaikin_PR5
                 pwd += temp;
             }
             captchaCode = pwd;
+            SetCodeToLabel(captchaCode);
         }
 
-        private void tbCaptchaInput_SourceUpdated(object sender, DataTransferEventArgs e)
+        private void tbCaptchaInput_KeyDown(object sender, KeyEventArgs e)
         {
-            if (tbCaptchaInput.Text == captchaCode)
+            if (e.Key == Key.Enter)
             {
-                NavigationService.GoBack();
+                if (tbCaptchaInput.Text == captchaCode)
+                {
+                    NavigationService.GoBack();
+                }
+                else
+                {
+                    GetCode();
+                }
             }
         }
     }
