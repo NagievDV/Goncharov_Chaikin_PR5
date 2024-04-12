@@ -4,8 +4,8 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="1c55d268498b451abff465b5bff5e142" Name="Diagram1">
-        <EntityTypeShape EntityType="Goncharov_Chaikin_PIT_PR5Model.User" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+      <Diagram DiagramId="f281510d373540c6b5ba0115567a7cc3" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.User" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

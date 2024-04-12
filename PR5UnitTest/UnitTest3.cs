@@ -13,9 +13,8 @@ namespace PR5UnitTest
 
             var tAP = new AuthPage();
 
-            var tCP = new CaptchaPage();
+            var tRP = new RegPage();
 
-            //Позитивные тест-кейсы
             Assert.IsTrue(tAP.Auth("Elizor@gmai,com", "yntiRS"));
             Assert.IsTrue(tAP.Auth("Vladlena@gmai.com", "07i7Lb"));
             Assert.IsTrue(tAP.Auth("Adam@gmai.com", "7SP9CV"));
@@ -29,7 +28,16 @@ namespace PR5UnitTest
             Assert.IsTrue(tAP.Auth("Anisa@gmai.com", "Wh4OYm"));
             Assert.IsTrue(tAP.Auth("Feafan@@gmai,com", "Kc1PeS"));
 
-            //Негативные тест-кейсы
+            Assert.IsFalse(tRP.Registrate("", "test", "test", "test", "Администратор", "18594037856",
+    "https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/2dd179dd-8c5a-4d5d-ad11-34b30529dac1/1920x", "М"));
+            Assert.IsFalse(tRP.Registrate("test", "test", "test", "test", "Менеджер C", "880053344",
+                "https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/2dd179dd-8c5a-4d5d-ad11-34b30529dac1/1920x", "Ж"));
+            Assert.IsFalse(tRP.Registrate("Нагиев Дмитрий Владимирович", "test", "test", "test", "Администратор", "8800ф553344",
+                "https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/2dd179dd-8c5a-4d5d-ad11-34b30529dac1/1920x", "М"));
+            Assert.IsFalse(tRP.Registrate("test", "test", "test", "test", "", "88005553344",
+                "https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/2dd179dd-8c5a-4d5d-ad11-34b30529dac1/1920x", "М"));
+
+
 
         }
     }

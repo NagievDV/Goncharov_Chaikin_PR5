@@ -64,6 +64,13 @@ namespace _3ISIP_321_Goncharov_Chaikin_PR5
                     return false;
                     
                 }
+                else if (user.Role == "Удален")
+                {
+                    MessageBox.Show($"Отказано в доступе!");
+                    tbLogin.Clear();
+                    pbPassword.Clear();
+                    return true;
+                }
                 MessageBox.Show($"Здравствуйте, {user.Role} {user.FIO.Replace('*', ' ')}!");
                 tbLogin.Clear();
                 pbPassword.Clear();
@@ -71,6 +78,11 @@ namespace _3ISIP_321_Goncharov_Chaikin_PR5
             }
 
 
+        }
+
+        private void btnReg_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new RegPage());
         }
     }
 }

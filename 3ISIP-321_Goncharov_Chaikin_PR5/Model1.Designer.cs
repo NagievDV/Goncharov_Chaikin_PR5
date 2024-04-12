@@ -1,4 +1,4 @@
-﻿// Создание кода T4 для модели "C:\Users\217042\Desktop\3ISIP-321_Goncharov_Chaikin_PR5\3ISIP-321_Goncharov_Chaikin_PR5\Model1.edmx" включено. 
+﻿// Создание кода T4 для модели "C:\Users\gdmit\Desktop\Goncharov_Chaikin_PR5\3ISIP-321_Goncharov_Chaikin_PR5\Model1.edmx" включено. 
 // Чтобы включить формирование кода прежних версий, измените значение свойства "Стратегия создания кода" конструктора
 // на "Legacy ObjectContext". Это свойство доступно в окне "Свойства", если модель
 // открыта в конструкторе.

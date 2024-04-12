@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_3ISIP_321_Goncharov_Chaikin_PR5"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="300">
+        Title="ТЦ павильоны" Height="300" Width="300">
     <Frame x:Name="frMain" Source="AuthPage.xaml" NavigationUIVisibility="Hidden">
         
     </Frame>
