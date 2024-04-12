@@ -25,12 +25,6 @@ namespace _3ISIP_321_Goncharov_Chaikin_PR5
         {
             throw new UnintentionalCodeFirstException();
         }
-        public static Entities GetContext()
-        {
-            if (context == null)
-                context = new Entities();
-            return context;
-        }
 
         public virtual DbSet<User> User { get; set; }
     }
